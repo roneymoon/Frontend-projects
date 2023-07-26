@@ -1,0 +1,126 @@
+@font-face{
+    font-family: 'Amazon Ember';
+    src: url(fonts/Amazon\ Ember.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.shop-section{
+    background: rgb(255,255,255);
+    background: linear-gradient(93deg, rgba(255,255,255,1) 0%, rgba(50,64,101,1) 0%, rgba(183,204,207,0.4515056022408963) 100%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    padding-bottom: 1000px;
+}
+.box{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    height: 395px;
+    width: 320px;
+}
+.box-content h2{
+    color: rgb(45, 45, 45);
+    display:flex;
+    margin-left: 10px;
+}
+.images-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+.images-grid .sub-content{
+    margin-top: 20px;
+}
+.image{
+    width: 155px;
+    height: 105px;
+    margin: 0;
+    margin-right: 10px;
+    object-fit: contain;
+    border-radius: 7px;
+}
+.see-more{
+    font-size: 12px;
+}
+.shop-now{
+    height: 40px;
+    margin-top: 20px;
+    width: 310px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #fbcf0c;
+    font-weight: 700;
+    transition: background-color 0.1s;
+}
+.shop-now:hover{
+    background-color:#f7cb09;
+}
+
+.img-container{
+    width: 320px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.box-img{
+    display: block; /* Ensure the image fills the container */
+    clip: rect(0, 320px, 300px, 0); 
+    margin-top: 20px;
+}
+.more-info{
+    text-align: left;
+    margin: 20px 20px;
+    font-size: 13px;
+    color: #007185;
+}
+.box4{
+    width: 280px;
+    height: 110px;
+    padding: 20px;
+    margin-left: 15px;
+    display: grid;
+    grid-template: row;
+}
+.box4-h2{
+    text-align: left;
+}
+.sign-in{
+    height: 35px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #fbcf0c;
+    font-weight: 700;
+    margin-left: -18px;
+    transition: background-color 0.1s;
+}
+.sign-in:hover{
+    background-color:#f7cb09;
+}
+.ad-img{
+    margin-top: 30px;
+    margin-left: -8px;
+}
+.offer-tag{
+    position: absolute;
+    background-color: #CC0C39;
+    padding: 4px;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.top-deal{
+    font-size: 13px;
+    display: flex;
+    margin-left: 125px;
+    margin-top: 3px;
+    font-weight: bold;
+    color: #CC0C39;
+}

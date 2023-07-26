@@ -1,0 +1,33 @@
+@font-face{
+    font-family: 'Amazon Ember';
+    src: url(fonts/Amazon\ Ember.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.hero-section{
+    background-image: url(images/hero_image.jpg);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #007185;
+}
+a:hover{
+    text-decoration: none;
+    color: #C7511F;
+}
+.hero-msg{
+    background-color: #f0ffff;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    margin-bottom: -20px;
+    padding-left: 30px;
+}
