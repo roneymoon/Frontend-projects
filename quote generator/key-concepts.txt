@@ -1,0 +1,11 @@
+project 1: quote generator using DOM manipulation
+
+key concepts for the project:-
+
+1.) document.queryselector()
+
+2.) addEventListener()
+
+3.) Math Object()
+
+4.) innerText 
