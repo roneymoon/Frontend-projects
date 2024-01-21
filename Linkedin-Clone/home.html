@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" type="image/png" href="images/hub-logo - Copy.png">
+  <title>Work-Hub</title>
+</head>
+
+<body class="bg-[#F4F2EE] mt-[4rem] pb-[2rem]">
+  <!-- nav-bar Section -->
+  <nav class="fixed top-0 bg-white z-100  shadow-sm z-[1000] w-full">
+    <div class="px-10 py-1 flex align-middle">
+      <div class="nav1 flex">
+        <div class="logo cursor-pointer">
+          <img class="w-[7rem]" src="images/work-hub.png" alt="hub logo">
+        </div>
+        <div class="search relative cursor-pointer">
+          <input type="text" class="search-box bg-[#EDF3F8] pl-12 py-1 h-8 outline-none w-[350px] rounded mt-2 ml-5" placeholder="Search">
+          <span class="search-icon absolute w-4 left-9 top-4"><img src="images/search.png" alt=""></span>
+        </div>
+      </div>
+      <div class="nav2 p-2 pr-8">
+        <ul class="flex space-x-10 ml-10">
+          <li class="home group flex flex-col relative items-center cursor-pointer ">
+            <a class="" href="#"><img class="w-6 opacity-70 hover:opacity-100  transition-all duration-150" src="images/home(1).png" alt="home"></a>
+            <span class="text-[11px] font-thin text-center">Home</span>
+            <div class="w-full h-[1.9px] absolute -bottom-2 bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"></div>
+          </li>
+          <li class="friends group flex flex-col relative items-center cursor-pointer ">
+            <a class="" href="#"><img class="w-6 opacity-70 hover:opacity-100  transition-all duration-150" src="images/people.png" alt="friends"></a>
+            <span class="text-[11px] font-thin">My Friends</span>
+            <div class="w-full h-[1.9px] absolute -bottom-2 bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"></div>
+          </li>
+          <li class="jobs group flex flex-col relative items-center cursor-pointer ">
+            <a class="" href="#"><img class="w-6 opacity-70 hover:opacity-100 transition-all duration-150" src="images/jobs.png" alt="jobs"></a>
+            <span class="text-[11px] font-thin">Jobs</span>
+            <div class="w-full h-[1.9px] absolute -bottom-2 bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"></div>
+          </li>
+          <li class="messaging group flex flex-col relative items-center cursor-pointer ">
+            <a class="" href="#"><img class="w-6 opacity-70 hover:opacity-100  transition-all duration-150" src="images/messaging.png" alt="messaging"></a>
+            <span class="text-[11px] font-thin text-center">messages</span>
+            <div class="w-full h-[1.9px] absolute -bottom-2 bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"></div>
+          </li>
+          <li class="notification group flex flex-col relative items-center cursor-pointer ">
+            <a class="" href="#"><img class="w-6 opacity-70 hover:opacity-100  transition-all duration-150" src="images/notification.png" alt="notification"></a>
+            <span class="text-[11px] font-thin">Notification</span>
+            <div class="w-full h-[1.9px] absolute -bottom-2 bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"></div>
+          </li>
+          <li class="profile group flex flex-col relative items-center cursor-pointer ">
+            <a class="" href="#"><img class="w-6 opacity-70 hover:opacity-100  transition-all duration-150" src="images/profile-user.png" alt="profile"></a>
+            <span class="text-[11px] font-thin">Profile</span>
+            <div class="w-full h-[1.9px] absolute -bottom-2 bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-slate-500 mt-1 w-[1.2px] h-[3rem]"></div>
+      <div class="nav3 flex ml-5">
+        <div class="sidebar-menu flex flex-col items-center justify-center cursor-pointer">
+          <img class="w-5 items-center" src="images/menu.png" alt="">
+          <span class="text-[11px] font-thin flex text-center mt-1">For Business <i><img class="w-3 mt-1 ml-1" src="images/drop-down-arrow.png" alt=""></i></span>
+        </div>
+        <div class="premium w-[5rem] cursor-pointer ml-6 mt-1">
+          <p class="text-[12px] font-normal text-[#915907] text-center underline hover:text-amber-800">Try Premium for ₹0</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--SECTION OF HOME PAGE -->
+  <section> 
+    <div class="main-container relative grid grid-flow-row grid-cols-12 gap-[1rem] pl-[5rem] pr-[4rem] pt-6">
+      <div class="left-section col-span-3">
+        <!-- feed-identity-card -->
+        <div class="feed-identity-card grid-flow-row relative bg-white rounded max-w-[88%] h-[21.5rem] shadow-md">
+          <div class="identity block">
+            <div class="profile-identity relative">
+              <img class="rounded-tl rounded-tr" src="images/background-feed-identity.svg" alt="">
+              <div class="profile-pic absolute w-[4.2rem] top-[10px] left-[4.5rem] border-white rounded-full border-2">
+                <img src="images/profile-pic.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="part-2 block relative px-3">
+            <span class="text-[14.7px] font-semibold absolute top-9 left-[4rem]">Roney Moon</span>
+            <span class="text-[10.5px] font-normal text-slate-500 absolute top-[4rem] text-center">Attended Insitute of Aeronautical Engineering</span>
+          </div>
+
+          <div class="part-3 block relative cursor-pointer border-t py-2 border-gray-300 mt-[6.9rem] align-middle justify-center">      
+            <a class="" href="friends.html">
+              <div class="h-[3.5rem] hover:bg-slate-200 pl-3 p-2">
+                <p class="text-[10px] font-bold text-black opacity-50">Connections</p>
+                <span class="text-[10.8px] font-semibold absolute">Connect with Alumni</span>
+                <i class=""><img class="w-[1.3rem] absolute top-5 p-1 rounded-full right-5 hover:bg-slate-300" src="images/add-friend.png" alt=""></i>
+              </div>
+            </a>
+          </div>
+          <div class="part-4 block relative cursor-pointer border-t border-b border-gray-300 px-3 py-1 hover:bg-slate-200">
+            <a class="" href="#">
+              <p class="text-[10px] font-bold opacity-50">Strengthen your profile with an AI writing Assistant</p>
+              <a class="text-[12px] text-amber-600 hover:text-orange-800 transition-all duration-150 font-normal" href="#">🪙 Try Premium for ₹0</a>
+            </a>
+          </div>
+          <div class="part-5 block relative cursor-pointer rounded-br-lg rounded-bl-lg  hover:bg-slate-200 h-[2.5rem] overflow-hidden">
+            <img class="w-3 absolute top-3 left-4 opacity-45" src="images/bookmark.png" alt="">
+            <span class="text-[10px] absolute top-2 left-10 font-bold opacity-70">My Items</span>
+          </div>
+        </div>
+
+        <!-- discover-more-card -->
+        <div class="discover-more-card grid grid-rows-4 mt-4 bg-white h-[10rem] max-w-[88%] shadow-lg rounded">
+          <div class="border-b border-gray-300 flex items-center px-4">
+            <a href="#"><span class="text-[12px] text-blue-700 font-semibold">Groups</span></a>
+          </div>
+          <div class="border-b border-gray-300 relative flex items-center px-4">
+            <a href="#"><span class="text-[12px] text-blue-700 font-semibold">Events</span></a>
+            <i class="cursor-pointer  absolute text-2xl text-blue-700 right-3">+</i>
+          </div>
+          <div class="border-b border-gray-300 flex items-center px-4">
+            <a href="#"><span class="text-[12px] text-blue-700 font-semibold">Followed-Hashtags</span></a>
+          </div>
+          <div class=" hover:bg-gray-100 flex items-center justify-center overflow-hidden rounded">
+            <span class="text-[12px] text-gray-700 font-semibold opacity-85"><a href="friends.html">Discover More</a></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- POSTS SECTION AND FEED (MIDDLE SECTION) -->
+      <div class="Post grid grid-flow-row col-span-6 relative">
+        <div class="share-box-feed grid grid-rows-6 bg-white rounded h-[8rem] pl-4 pt-4 border">
+
+          <div class="flex row-span-3 space-x-5">
+            <img class="w-[3.5rem] object-fill" src="images/profile-pic.png" alt="">
+            <button class="border-[1.3px] h-full w-[80%] rounded-full text-left px-5 border-gray-400 text-[13px] font-semibold opacity-70 hover:bg-[#d7d7d7c1]">Start a post</button>
+          </div>
+          <div class="flex row-span-3 space-x-[6rem] p-3 ">
+            <button class="flex ml-5 text-[14.5px] hover:bg-[#e1e1e188] rounded-2xl px-3 py-1 text-gray-700 font-medium"><i class="mr-1"><img class="w-6" src="images/add-image.png" alt=""></i>Media</button>
+            <button class="flex text-[14.5px] hover:bg-[#e1e1e188] rounded-2xl px-3 py-1 text-gray-700 font-medium"><i class="mr-1"><img class="w-5" src="images/calendar.png" alt=""></i>Event</button>
+            <button class="flex text-[14.5px] hover:bg-[#e1e1e188] rounded-2xl px-3 py-1 text-gray-700 font-medium"><i class="mr-1"><img class="w-5" src="images/application.png" alt=""></i>Article</button>
+          </div>
+        </div>
+        
+        <!-- Explicitly placed item (post1) -->
+        <div class="post1 bg-white mt-5 h-[37.2rem] rounded border">
+          <div class="top-section flex px-5 pt-5 space-x-[9rem] relative">
+            <div class="flex space-x-2 group cursor-pointer">
+              <img class=" w-[2.8rem] h-[2.8rem] rounded-full" src="images/profile-1.jpeg" alt="">
+              <div class="details">
+                <a href=""><p class="text-[15px] hover:underline hover:text-blue-600 hover:font-semibold font-semibold">Tara V <span class="no-underline text-[12px] text-gray-600 font-medium">• 3rd+</span></p></a>
+                <p class="text-[11px] font-medium opacity-50">Educational Consultant at Self Employed</p>
+                <p class="text-[11px] font-medium opacity-50">5d •🌎</p>
+              </div>
+            </div>
+            <img class="absolute w-4 opacity-40 hover:opacity-65 top-[0.7rem] right-11" src="images/dots.png" alt="">
+            <img class="absolute w-3 opacity-40 hover:opacity-65 top-3 right-5" src="images/close.png" alt="">
+            <button class="hover:bg-blue-100 transition-all duration-250 mt-3 px-2 rounded text-blue-700 max-h-[2rem]"><i class="">+</i>Follow</button>
+          </div>
+
+          <div class="content-section relative">
+            <p class="text-[14px] font-medium px-5 pt-2"><a class="text-blue-800 font-semibold" href="#">Jade Bonacolta</a> suggest to a focus on the essential elements and to promote clarity and efficiency.
+            </p>
+            <div class="see-more cursor-pointer text-[12.5px] text-right mr-4 hover:underline px-5 py-2 text-gray-600">...see more</div>
+            <div class="image w-full">
+              <img class="w-full" src="images/post1.jpeg" alt="">
+            </div>
+            <div class="engagement flex relative h-[2rem]">
+              <div class="grouped-reactions ">
+                <img class="absolute top-2 left-[1.6rem]" src="images/like-svg.svg" alt="">
+                <img class="absolute top-2 left-[2.2rem]" src="images/heart-svg.svg" alt="">
+                <img class="absolute top-2 left-[2.8rem]" src="images/claps-svg.svg" alt="">
+                <div><p class="cursor-pointer text-[13.5px] hover:underline ml-16 py-1 text-gray-600">155</p></div>
+              </div>
+              <div class="flex space-x-1 absolute right-4">
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">7 comments</p>
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">•</p>
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">11 reposts</p>
+              </div>
+            </div>
+            <div class="bg-gray-300 h-[0.9px] w-full"></div>
+            <div class="flex h-[20%] space-x-8 ml-6 mt-2">
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/like.png" alt="">
+                <p>like</p>
+              </div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/comment.png" alt="">
+                <p>comment</p>
+              </div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/repost.png" alt="">
+                <p>repost</p></div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/send.png" alt="">
+                <p>send</p></div>
+              </div>
+            </div>
+        </div>
+
+        <div class="post2 bg-white mt-5 h-[37.2rem] rounded border">
+          <div class="top-section flex px-5 pt-5 space-x-[9rem] relative">
+            <div class="flex space-x-2 group cursor-pointer">
+              <img class=" w-[2.8rem] h-[2.8rem] rounded-full" src="images/profile-1.jpeg" alt="">
+              <div class="details">
+                <a href=""><p class="text-[15px] hover:underline hover:text-blue-600 hover:font-semibold font-semibold">Tara V <span class="no-underline text-[12px] text-gray-600 font-medium">• 3rd+</span></p></a>
+                <p class="text-[11px] font-medium opacity-50">Educational Consultant at Self Employed</p>
+                <p class="text-[11px] font-medium opacity-50">5d •🌎</p>
+              </div>
+            </div>
+            <img class="absolute w-4 opacity-40 hover:opacity-65 top-[0.7rem] right-11" src="images/dots.png" alt="">
+            <img class="absolute w-3 opacity-40 hover:opacity-65 top-3 right-5" src="images/close.png" alt="">
+            <button class="hover:bg-blue-100 transition-all duration-250 mt-3 px-2 rounded text-blue-700 max-h-[2rem]"><i class="">+</i>Follow</button>
+          </div>
+
+          <div class="content-section relative">
+            <p class="text-[14px] font-medium px-5 pt-2"><a class="text-blue-800 font-semibold" href="#">Jade Bonacolta</a> suggest to a focus on the essential elements and to promote clarity and efficiency.
+            </p>
+            <div class="see-more cursor-pointer text-[12.5px] text-right mr-4 hover:underline px-5 py-2 text-gray-600">...see more</div>
+            <div class="image w-full">
+              <img class="w-full" src="images/post1.jpeg" alt="">
+            </div>
+            <div class="engagement flex relative h-[2rem]">
+              <div class="grouped-reactions ">
+                <img class="absolute top-2 left-[1.6rem]" src="images/like-svg.svg" alt="">
+                <img class="absolute top-2 left-[2.2rem]" src="images/heart-svg.svg" alt="">
+                <img class="absolute top-2 left-[2.8rem]" src="images/claps-svg.svg" alt="">
+                <div><p class="cursor-pointer text-[13.5px] hover:underline ml-16 py-1 text-gray-600">155</p></div>
+              </div>
+              <div class="flex space-x-1 absolute right-4">
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">7 comments</p>
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">•</p>
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">11 reposts</p>
+              </div>
+            </div>
+            <div class="bg-gray-300 h-[0.9px] w-full"></div>
+            <div class="flex h-[20%] space-x-8 ml-6 mt-2">
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/like.png" alt="">
+                <p>like</p>
+              </div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/comment.png" alt="">
+                <p>comment</p>
+              </div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/repost.png" alt="">
+                <p>repost</p></div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/send.png" alt="">
+                <p>send</p></div>
+              </div>
+            </div>
+        </div>
+
+        <div class="post3 bg-white mt-5 h-[37.2rem] rounded border">
+          <div class="top-section flex px-5 pt-5 space-x-[9rem] relative">
+            <div class="flex space-x-2 group cursor-pointer">
+              <img class=" w-[2.8rem] h-[2.8rem] rounded-full" src="images/profile-1.jpeg" alt="">
+              <div class="details">
+                <a href=""><p class="text-[15px] hover:underline hover:text-blue-600 hover:font-semibold font-semibold">Tara V <span class="no-underline text-[12px] text-gray-600 font-medium">• 3rd+</span></p></a>
+                <p class="text-[11px] font-medium opacity-50">Educational Consultant at Self Employed</p>
+                <p class="text-[11px] font-medium opacity-50">5d •🌎</p>
+              </div>
+            </div>
+            <img class="absolute w-4 opacity-40 hover:opacity-65 top-[0.7rem] right-11" src="images/dots.png" alt="">
+            <img class="absolute w-3 opacity-40 hover:opacity-65 top-3 right-5" src="images/close.png" alt="">
+            <button class="hover:bg-blue-100 transition-all duration-250 mt-3 px-2 rounded text-blue-700 max-h-[2rem]"><i class="">+</i>Follow</button>
+          </div>
+
+          <div class="content-section relative">
+            <p class="text-[14px] font-medium px-5 pt-2"><a class="text-blue-800 font-semibold" href="#">Jade Bonacolta</a> suggest to a focus on the essential elements and to promote clarity and efficiency.
+            </p>
+            <div class="see-more cursor-pointer text-[12.5px] text-right mr-4 hover:underline px-5 py-2 text-gray-600">...see more</div>
+            <div class="image w-full">
+              <img class="w-full" src="images/post1.jpeg" alt="">
+            </div>
+            <div class="engagement flex relative h-[2rem]">
+              <div class="grouped-reactions ">
+                <img class="absolute top-2 left-[1.6rem]" src="images/like-svg.svg" alt="">
+                <img class="absolute top-2 left-[2.2rem]" src="images/heart-svg.svg" alt="">
+                <img class="absolute top-2 left-[2.8rem]" src="images/claps-svg.svg" alt="">
+                <div><p class="cursor-pointer text-[13.5px] hover:underline ml-16 py-1 text-gray-600">155</p></div>
+              </div>
+              <div class="flex space-x-1 absolute right-4">
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">7 comments</p>
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">•</p>
+                <p class="cursor-pointer text-[13.5px] hover:underline py-1 text-gray-600">11 reposts</p>
+              </div>
+            </div>
+            <div class="bg-gray-300 h-[0.9px] w-full"></div>
+            <div class="flex h-[20%] space-x-8 ml-6 mt-2">
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/like.png" alt="">
+                <p>like</p>
+              </div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/comment.png" alt="">
+                <p>comment</p>
+              </div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/repost.png" alt="">
+                <p>repost</p></div>
+              <div class="flex items-center justify-center rounded space-x-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 px-3 h-[2rem]">
+                <img class="w-5 h-5" src="images/send.png" alt="">
+                <p>send</p></div>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+      
+
+
+      
+      <div class="right-section col-span-3">
+        <div class="news-feed-card bg-white rounded-lg pt-3 relative shadow-md w-[100%] h-[19rem]">
+          <h1 class="text-[15px] font-semibold mb-2 ml-5 opacity-85">Work-Hub News</h1>
+          <a href="">
+            <img class="absolute cursor-pointer w-3 top-3 right-5" src="images/information.png" alt="">
+          </a>
+          <ul class="space-y-0">
+            <li class="flex flex-col py-1 cursor-pointer transition-all duration-150 hover:bg-gray-100">
+              <p class="text-[13px] font-semibold opacity-85 ml-5">● Citigroup to cut 20,000 jobs</p>
+              <span class="text-[11px] ml-8 opacity-65">5h ago • 19,709 readers</span>
+            </li>
+            <li class="flex flex-col py-1 cursor-pointer transition-all duration-150 hover:bg-gray-100">
+              <p class="text-[13px] font-semibold opacity-85 ml-5">● Firms on a hiring spree</p>
+              <span class="text-[11px] ml-8 opacity-65">4h ago • 23,272 readers</span>
+            </li>
+            <li class="flex flex-col py-1 cursor-pointer transition-all duration-150 hover:bg-gray-100">
+              <p class="text-[13px] font-semibold opacity-85 ml-5">● OTTs rethink marketing strategies</p>
+              <span class="text-[11px] ml-8 opacity-65">7h ago</span>
+            </li>
+            <li class="flex flex-col py-1 cursor-pointer transition-all duration-150 hover:bg-gray-100">
+              <p class="text-[13px] font-semibold opacity-85 ml-5">● Big Four bets on young talent</p>
+              <span class="text-[11px] ml-8 opacity-65">7h ago • 2,709 readers</span>
+            </li>
+            <li class="flex flex-col py-1 cursor-pointer transition-all duration-150 hover:bg-gray-100">
+              <p class="text-[13px] font-semibold opacity-85 ml-5">● Leaves, the Perfect work gift</p>
+              <span class="text-[11px] ml-8 opacity-65">7h ago • 2,032 readers</span>
+            </li>
+          </ul>
+          <button class="text-[13px] flex font-medium mt-1 align-middle ml-[4.5rem] px-3 py-1 hover:bg-gray-200 rounded-xl">Show more<span><img class="w-3 ml-2 mt-1" src="images/down-arrow.png" alt=""></span></button>
+        </div>
+
+        <div class="sticky top-[5rem]">
+          <div class="premium-card  bg-white h-[13.4rem] pt-4 mt-5 rounded-lg shadow-md">
+            <div class="flex absolute right-4 top-2 space-x-1">
+              <span class="text-[11px]">ad</span>
+              <a href=""><img class="w-4 hover:opacity-65 transition-all duration-150" src="images/dots.png" alt="menu"></a>
+            </div>
+            <div class="mb-2">
+              <p class="text-[11px] ml-[3rem] opacity-55">New year, new premium features</p>
+            </div>
+            <div class="flex align-middle ml-[3.8rem] space-x-2">
+              <a href="#"><img class="w-[4.5rem]" src="images/profile-pic.png" alt=""></a> 
+              <a href="#"><img class="w-[4.5rem] mt-3" src="images/hub-logo - Copy.png" alt=""></a> 
+            </div>
+            <div class="text-[13px] font-normal opacity-65 px-5 text-center mt-2">Stand out by marking jobs as your top choice.</div>
+            <button class="ml-[5.3rem] px-[1rem] text-[14.2px] mt-2 py-1 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-100 transition-all duration-150">Try for free</button>
+          </div>
+
+          <div class="global-footer grid grid-rows-5 space-y-1 items-center py-4 ">
+            <div class="hidden"></div>
+            <div class="row1 flex space-x-4 text-[11px] opacity-55 justify-center">
+              <a href="">About</a>
+              <a href="">Accessibility</a>
+              <a href="">Help Center</a>
+            </div>
+            <div class="row2 flex space-x-4 text-[11px] opacity-55 justify-center">
+              <a href="">Privacy & Terms <img src="" alt=""></a>
+              <a href="">Ad Choices</a>
+            </div>
+            <div class="row3 flex space-x-4 text-[11px] opacity-55 justify-center">
+              <a href="">Advertising</a>
+              <a href="">Business Services <img src="" alt=""></a>
+            </div>
+            <div class="row4 flex space-x-4 text-[11px] opacity-55 justify-center">
+              <a href="">Get the Work-hub App</a>
+              <a href="">More</a>
+            </div>
+            <div class="row5 flex space-x-4 text-[11px] justify-center">
+              <p class="flex"><img class="w-[3.8rem] opacity-100 h-full" src="images/work-hub.png" alt=""> <span class="opacity-55 mt-[3px] ml-[3px]">Work-Hub Corporation ©️ 2024</span></p>
+            </div>
+          </div>
+        </div>
+        
+
+        
+      </div>
+      
+    </div>
+  </section>
+</body>
+
+</html>
